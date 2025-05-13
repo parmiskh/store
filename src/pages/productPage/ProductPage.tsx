@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import Container from "../../components/container/Container";
+import Button from "../../components/button/button";
 
 export default function ProductPage() {
   const params = useParams();
@@ -38,7 +39,7 @@ export default function ProductPage() {
               </p>
             </div>
 
-            <button>add to cart</button>
+            <Button className="mt-2 w-full !py-3" variant="primary">add to cart</Button>
           </div>
         </div>
       </Container>
