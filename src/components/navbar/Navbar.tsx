@@ -15,7 +15,9 @@ export default function Navbar() {
             </li>
           </ul>
           <div className=" flex items-center py-2 px-3 rounded-md border bg-slate-500 text-white">
-            <button>سبد خرید</button>
+            <Link to="/cart">
+              <button>سبد خرید</button>
+            </Link>
           </div>
         </div>
       </Container>

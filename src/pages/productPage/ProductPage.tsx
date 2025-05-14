@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import Container from "../../components/container/Container";
-import Button from "../../components/button/button";
+import Button from "../../components/button/Button";
 
 export default function ProductPage() {
   const params = useParams();
@@ -23,23 +23,24 @@ export default function ProductPage() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
                 dolore saepe distinctio numquam voluptas, debitis qui ex nulla
                 velit autem vel totam repellendus expedita, laboriosam
-                exercitationem neque voluptates quidem ipsum?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-                dolore saepe distinctio numquam voluptas, debitis qui ex nulla
-                velit autem vel totam repellendus expedita, laboriosam
-                exercitationem neque voluptates quidem ipsum?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-                dolore saepe distinctio numquam voluptas, debitis qui ex nulla
-                velit autem vel totam repellendus expedita, laboriosam
-                exercitationem neque voluptates quidem ipsum?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-                dolore saepe distinctio numquam voluptas, debitis qui ex nulla
-                velit autem vel totam repellendus expedita, laboriosam
+                exercitationem neque voluptates quidem ipsum? Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Nostrum dolore saepe
+                distinctio numquam voluptas, debitis qui ex nulla velit autem
+                vel totam repellendus expedita, laboriosam exercitationem neque
+                voluptates quidem ipsum? Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Nostrum dolore saepe distinctio numquam
+                voluptas, debitis qui ex nulla velit autem vel totam repellendus
+                expedita, laboriosam exercitationem neque voluptates quidem
+                ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nostrum dolore saepe distinctio numquam voluptas, debitis qui ex
+                nulla velit autem vel totam repellendus expedita, laboriosam
                 exercitationem neque voluptates quidem ipsum?
               </p>
             </div>
 
-            <Button className="mt-2 w-full !py-3" variant="primary">add to cart</Button>
+            <Button className="mt-2 w-full !py-3" variant="primary">
+              add to cart
+            </Button>
           </div>
         </div>
       </Container>
