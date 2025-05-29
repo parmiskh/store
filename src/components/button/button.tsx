@@ -3,20 +3,12 @@ import type { ComponentProps } from "react";
 type TVariant = "primary" | "secondary" | "danger" | "warning" | "success";
 
 type TButton = ComponentProps<"button"> & {
-  variant?: TVariant;
+  variant ?: TVariant;
 };
 
 export default function Button({ children, variant, style, ...rest }: TButton) {
   return (
-    <button
-      {...rest}
-      style={{
-        padding: "4px 8px",
-        borderRadius: "6px",
-        ...style,
-        ...checkVariant(variant),
-      }}
-    >
+    <button {...rest} style={{padding: "4px 8px", borderRadius: "6px", ...style, ...checkVariant(variant) }}>
       {children}
     </button>
   );
