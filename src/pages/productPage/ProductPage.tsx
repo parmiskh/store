@@ -14,6 +14,9 @@ export default function ProductPage() {
               src="https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg"
               alt=""
             />
+            <Button className="mt-2 w-full !py-3" variant="primary">
+              add to cart
+            </Button>
           </div>
           <div className="col-span-10 p-7 ">
             <h1 className="mb-5 font-bold">عنوان محصول</h1>
@@ -38,9 +41,7 @@ export default function ProductPage() {
               </p>
             </div>
 
-            <Button className="mt-2 w-full !py-3" variant="primary">
-              add to cart
-            </Button>
+            
           </div>
         </div>
       </Container>
