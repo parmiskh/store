@@ -1,22 +1,32 @@
-export default function ProductItem() {
+import type { Products } from "../../types/servers";
+
+type ProductItem = Products;
+
+export default function ProductItem({
+  title,
+  price,
+  description,
+  image,
+}: ProductItem) {
   return (
-    <div className="border rounded-md">
-      <img
-        className="rounded-t-md"
-        src="https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg"
-        alt=""
-      />
-      <div className="flex justify-between items-center p-4">
-        <h3>عنوان محصول</h3>
-        <span>55$</span>
+    <div className="border rounded-md h-lvh flex flex-col justify-between ">
+      <div className="flex justify-center mt-4 items-center ">
+        <img
+          className="rounded-t-md "
+          src={image}
+          alt=""
+          width={200}
+          height={200}
+        />
       </div>
-      <div className="p-4">
-       <p className="line-clamp-2">
-       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
-        incidunt reiciendis error perferendis tenetur! Tempora repellendus,
-        magni vero ipsa tenetur inventore porro natus autem, voluptatem alias
-        perspiciatis illo dolores et!
-       </p>
+      <div className="flex flex-col items-center p-4 align-bottom">
+        <div className="flex justify-between items-center p-4 align-bottom">
+          <h3 className="line-clamp-1">{title}</h3>
+          <span>{price}</span>
+        </div>
+        <div className="p-4">
+          <p className="line-clamp-2">{description}</p>
+        </div>
       </div>
     </div>
   );
