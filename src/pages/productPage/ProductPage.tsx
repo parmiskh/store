@@ -40,8 +40,6 @@ export default function ProductPage() {
                 exercitationem neque voluptates quidem ipsum?
               </p>
             </div>
-
-            
           </div>
         </div>
       </Container>

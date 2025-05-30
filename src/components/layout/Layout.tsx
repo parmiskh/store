@@ -8,8 +8,10 @@ interface ILayout {
 export default function Layout({ children }: ILayout) {
   return (
     <>
-      <Navbar />
-      {children}
+      <div>
+        <Navbar />
+        {children}
+      </div>
     </>
   );
 }
